@@ -3,7 +3,7 @@ import os
 import shutil
 
 # Define paths
-json_file_path = r"C:\Users\vikaskoppineedi\Desktop\torrents_info.json"
+json_file_path = r"C:\Users\vikaskoppineedi\Desktop\ds_torrents_info.json"
 downloads_folder = r"C:\Users\vikaskoppineedi\Downloads\dt"  # Change this if needed
 destination_root = os.path.join(downloads_folder, "Sorted_Torrents")  # Parent folder for sorted torrents
 
@@ -26,6 +26,7 @@ for block in data:
         # Ensure it's a valid drive
         if drive_letter in count_dict:
             source_file = os.path.join(downloads_folder, torrent_name)
+            print(source_file)
             destination_folder = os.path.join(destination_root, drive_letter)  # Destination folder
 
             # Check if the torrent file exists in Downloads

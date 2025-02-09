@@ -18,9 +18,9 @@ with open(json_file_path, "r", encoding="utf-8") as file:
 sorted_data = sorted(data, key=lambda x: x["torrentName"])
 
 ds_data = []
-for block in data:
+for block in sorted_data:
     if "desitorrents" in block["torrentsTags"]:
-        ds_data.append(sorted_data)
+        ds_data.append(block)
         print(block)
 
 # Write dictionary to JSON file

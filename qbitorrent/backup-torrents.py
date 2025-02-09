@@ -4,7 +4,7 @@ import os
 
 # instantiate a Client using the appropriate WebUI configuration
 conn_info = dict(
-	host="192.168.50.121",
+	host="127.0.0.1",
 	port=9999,
 	username="admin",
 	password="123456",
